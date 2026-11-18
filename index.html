@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Overland Labs</title>
+<meta name="description" content="Overland Labs is an independent software studio in Colorado. Our first app is a tarot and astrology guide named Amber.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="mark" href="/">Overland Labs<span>.</span></a>
+  <nav aria-label="Main">
+    <a href="#amber">Our app</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="hero-copy">
+      <h1>We build small, playful apps.</h1>
+      <p class="lede">Overland Labs is an independent software studio in Colorado. Our first app, a tarot and astrology guide named Amber, launches Thanksgiving week 2026.</p>
+    </div>
+    <figure class="map" aria-label="A topographic map with the studio's route: base camp, then the first summit, Amber, then a dotted trail onward.">
+      <img src="topo.svg" alt="">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g>
+          <path class="grid-tick" d="M400 0v18M800 0v18M1200 0v18M400 900v-18M800 900v-18M1200 900v-18M0 300h18M0 600h18M1600 300h-18M1600 600h-18"/>
+          <text class="coord" x="1208" y="38">W 105°</text>
+          <text class="coord" x="1548" y="290" text-anchor="end">N 40°</text>
+        </g>
+        <path class="route draw" style="--len:1600" d="M240 790C430 805 650 780 800 700S960 540 1020 450S1080 350 1120 330"/>
+        <path class="route ahead after" d="M1120 330C1220 285 1300 300 1380 225S1500 125 1560 110"/>
+        <circle class="stop" cx="240" cy="790" r="20"/><text class="stop-n out" x="240" y="791">1</text>
+        <g class="after">
+          <circle class="stop here" cx="1120" cy="330" r="24"/><text class="stop-n" x="1120" y="331">2</text>
+          <circle class="stop" cx="1560" cy="110" r="20"/><text class="stop-n out" x="1560" y="111">3</text>
+        </g>
+      </svg>
+    </figure>
+    <ol class="legend">
+      <li><span class="n">1</span><span><b>Base camp.</b> Overland Labs opened in November 2026.</span></li>
+      <li><span class="n">2</span><span><b>First summit.</b> Amber, our tarot and astrology app, launches Thanksgiving week 2026.</span></li>
+      <li><span class="n">3</span><span><b>Further on.</b> More small apps. We'll mark them here as we go.</span></li>
+    </ol>
+  </div>
+
+  <section id="amber" class="split">
+    <div>
+      <h2>Tarot and astrology, with Amber</h2>
+      <p>Amber is a warm, funny guide with a 1950s soul. She pulls your card of the day, reads your stars and talks things through with you, using original illustrated decks, including seasonal decks for the holidays.</p>
+      <p>She's an AI, here for reflection and fun. She doesn't give medical, legal, financial or mental-health advice.</p>
+      <ul class="facts">
+        <li>For adults 18 and over in the United States.</li>
+        <li>Works in your web browser. iPhone and Android apps come later.</li>
+        <li>Sign in with just your email. No password.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Sparks</h3>
+      <p>Readings, chats with Amber and premium decks use sparks. You get free sparks when you join, and you can buy more:</p>
+      <table class="prices">
+        <thead><tr><th scope="col">Pack</th><th scope="col">Sparks</th><th scope="col">Price</th></tr></thead>
+        <tbody>
+          <tr><td>Starter</td><td>300</td><td>$4.99</td></tr>
+          <tr><td>Plus</td><td>650</td><td>$9.99</td></tr>
+          <tr><td>Mystic</td><td>1,400</td><td>$19.99</td></tr>
+        </tbody>
+      </table>
+      <p class="small">Prices are in US dollars and include tax. Purchases are sold by Stripe, our payment partner, which handles your card and sales tax. Sparks have no cash value. See <a href="refunds.html">refunds</a> and the <a href="terms.html">terms</a>.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in touch</h2>
+    <p>Questions about the app, a purchase or a refund, or just to say hello:</p>
+    <a class="email" href="mailto:hello@overland-labs.com">hello@overland-labs.com</a>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Overland Labs, Colorado</span>
+  <nav aria-label="Legal">
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="refunds.html">Refunds</a>
+    <a href="mailto:hello@overland-labs.com">Contact</a>
+  </nav>
+</footer>
+</body>
+</html>
